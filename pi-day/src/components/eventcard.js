@@ -1,6 +1,8 @@
 import React from "react";
 import linkedinLogo from "../assets/in.png"; // Import the LinkedIn logo image
 import "./eventcard.css";
+import Glass from "./glass";
+
 function EventCard({ event }) {
   const { date, time, location, speaker, linkedin, description } = event;
   return (

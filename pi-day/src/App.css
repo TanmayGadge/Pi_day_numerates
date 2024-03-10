@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url(./assets/bg.jpg);
 }
 
 .events-container {
@@ -14,6 +15,7 @@
   margin: 10px;
   max-width: 300px;
   background-color: #f9f9f9;
+  width: 100vh;
 }
 
 .event-card a {
@@ -31,3 +33,14 @@
   width: 30px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
 }
+
+.flex-container.th{
+  display: flex;
+  justify-content: center;
+}
+
+.App > h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+
+}   

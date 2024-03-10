@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { EventCard, TreasureHunt } from "./components";
+import Glass from "./components/glass";
 
 function App() {
   const speakerEvents = [
@@ -30,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Celebrate Pi Day with Us!</h1>
+      <h1>Celebrate <span className="pi p">P</span><span className="pi i">i</span> Day with Us!</h1>
       <h2>
         Join us for a series of captivating speaker events and an exhilarating
         treasure hunt!
@@ -39,7 +40,9 @@ function App() {
       <h3>Speaker Events:</h3>
       <div className="events-container">
         {speakerEvents.map((event, index) => (
-          <EventCard key={index} event={event} />
+          <Glass>
+            <EventCard key={index} event={event} />
+          </Glass>
         ))}
       </div>
 
