@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import linkedinLogo from "../assets/in.png";
 import "./eventcard.css";
 import Glass from "./glass";
 
 function EventCard({ event }) {
   const { date, time, location, speaker, linkedin, des } = event;
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <Glass>
-      <div className="event-card">
+      <div className="event-card" onClick={toggleMore}>
         <div className="event-header">
           <h3>{speaker}</h3>
           <a href={linkedin} target="_blank" rel="noopener noreferrer">
@@ -29,6 +35,11 @@ function EventCard({ event }) {
           </p>
         </div>
       </div>
+      {showMore && (
+        <div className="event-card-overlay">
+          <p>More information on linkedin</p>
+        </div>
+      )}
     </Glass>
   );
 }

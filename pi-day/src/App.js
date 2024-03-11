@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { EventCard, TreasureHunt } from "./components";
-import Glass from "./components/glass";
 
 function App() {
   const speakerEvents = [
@@ -12,6 +11,7 @@ function App() {
       speaker: "Mr. Ravi Khare ",
       des: "CEO, Symphony-Pune",
       linkedin: "https://www.linkedin.com/in/ravi-khare-a5432714/",
+      more: "",
     },
     {
       date: "March 14th",
@@ -20,12 +20,13 @@ function App() {
       speaker: "Dr. Sheetal Ghorpade",
       des: "Director(Data Science), Rubiscape Pune",
       linkedin: "https://www.linkedin.com/in/sheetalghorpade/",
+      more: "",
     },
   ];
 
   const treasureHunt = {
     date: "March 14th",
-    time: "2:00 PM onwards",
+    time: "4:30 PM onwards",
     location: "3rd Floor, Maitreyi bld",
   };
 
@@ -48,9 +49,10 @@ function App() {
       </div>
 
       <h3>Treasure Hunt:</h3>
-      <TreasureHunt treasureHunt={treasureHunt} />
-
-      <p>
+      <div className="events-container">
+        <TreasureHunt />
+      </div>
+      <p style={{ fontSize: 24 }}>
         Don't miss out on this mathematical extravaganza! Save the dates and
         join us in celebrating the infinite wonders of Pi!
       </p>

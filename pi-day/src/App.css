@@ -12,7 +12,7 @@ body {
     background-position: top; /* Start the animation from the top */
   }
   50% {
-    background-position: 0px -300px; /* End the animation at the bottom */
+    background-position: 0px -280px; /* End the animation at the bottom */
   }
   100% {
     background-position: top; /* Loop back to the top */
