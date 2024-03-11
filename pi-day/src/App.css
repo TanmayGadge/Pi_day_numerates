@@ -1,6 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: backgroundScroll 60s linear infinite;
+}
+
+@keyframes backgroundScroll {
+  from {
+    background-position: top; /* Start the animation from the top */
+  }
+  50% {
+    background-position: 0px -300px; /* End the animation at the bottom */
+  }
+  100% {
+    background-position: top; /* Loop back to the top */
+  }
+}
+
 .App {
   text-align: center;
-  background-image: url(./assets/bg.jpg);
 }
 
 .events-container {
