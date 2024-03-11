@@ -4,7 +4,7 @@ import "./eventcard.css";
 import Glass from "./glass";
 
 function EventCard({ event }) {
-  const { date, time, location, speaker, linkedin, des } = event;
+  const { date, time, location, speaker, linkedin, des, more } = event;
   const [showMore, setShowMore] = useState(false);
 
   const toggleMore = () => {
@@ -14,6 +14,7 @@ function EventCard({ event }) {
   return (
     <Glass>
       <div className="event-card" onClick={toggleMore}>
+        <img className="images" src={more} alt="just kidding" />
         <div className="event-header">
           <h3>{speaker}</h3>
           <a href={linkedin} target="_blank" rel="noopener noreferrer">
@@ -37,7 +38,7 @@ function EventCard({ event }) {
       </div>
       {showMore && (
         <div className="event-card-overlay">
-          <p>More information on linkedin</p>
+          <p>More information on LinkedIn</p>
         </div>
       )}
     </Glass>
