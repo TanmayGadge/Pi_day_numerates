@@ -31,7 +31,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Celebrate <span className="pi p">P</span><span className="pi i">i</span> Day with Us!</h1>
+      <h1>
+        Celebrate <span className="pi p">P</span>
+        <span className="pi i">i</span> Day with Us!
+      </h1>
       <h2>
         Join us for a series of captivating speaker events and an exhilarating
         treasure hunt!
@@ -40,9 +43,7 @@ function App() {
       <h3>Speaker Events:</h3>
       <div className="events-container">
         {speakerEvents.map((event, index) => (
-          <Glass>
-            <EventCard key={index} event={event} />
-          </Glass>
+          <EventCard key={index} event={event} />
         ))}
       </div>
 

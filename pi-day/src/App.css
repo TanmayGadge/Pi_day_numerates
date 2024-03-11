@@ -8,39 +8,12 @@
   justify-content: center;
 }
 
-.event-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 10px;
-  max-width: 300px;
-  background-color: #f9f9f9;
-  width: 100vh;
-}
-
-.event-card a {
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: blue;
-}
-
-.event-card a:hover {
-  text-decoration: underline;
-}
-
-.linkedin-logo {
-  width: 30px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.flex-container.th{
+.flex-container.th {
   display: flex;
   justify-content: center;
 }
 
-.App > h1{
+.App > h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-
-}   
+}
